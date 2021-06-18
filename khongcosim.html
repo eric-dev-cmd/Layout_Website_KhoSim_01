@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="./imgs/favicon/favicon-16x16.png" sizes="16x16" type="image/png">
     <link rel="stylesheet" href="./css/main.css">
-    <link rel="stylesheet" href="./font/fontawesome-pro-5.15.2/css/all.min.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -20,23 +20,54 @@
         <div class="menu-top">
             <div class="container my-1">
                 <div class="row flex-wrap justify-content-between align-items-center">
-                    <div class="col-6 col-md-3 text-center">
-                        <div class="logo-wrapper d-flex align-items-center justify-content-start">
-                            <div class="logo rounded">
-                                <a href="trangchu.html">
-                                    <img src="./imgs/news/logokhosim.svg" alt="Sim số đẹp" class="logo-img">
-                                </a>
-                            </div>
-                            <div class="px-4 position-relative icon-sepa">
-                                <a href="#" class="text-decoration-none">
-                                    <i class="fs-14 cl333 fas fa-bars"></i>
-                                </a>
-                                <span class="fw-400 fs-14 fw-normal cl333 danh-muc-sim">&nbsp;&nbsp;DANH MỤC SIM</span>
-                            </div>
+                    <div class="col-3 col-sm-3 col-md-3 col-lg-3 text-center h_icon">
+                            <div class="logo-wrapper d-flex align-items-center justify-content-start position-relative">
+                                    <div class="logo rounded">
+                                        <a href="trangchu.html">
+                                            <img src="./imgs/news/logokhosim.svg" alt="Sim số đẹp" class="logo-img">
+                                        </a>
+                                    </div>    
+                                    <div class="position-relative icon-sepa">
+                                        <label for="bar-id">
+                                            <i class="icon-sepa-icon fs-14 cl333 fas fa-bars"></i>
+                                        </label>
+                                        <!-- Nav Mobile -->
+                                        <input type="checkbox" hidden class="bar-btn" id="bar-id">
+                                        <label for="bar-id" class="bar_ovl"></label>
+                                        <nav class="bar_mobile">
+                                            <ul class="bar-list ps-0 mt-0">
+                                                <div class="head-bar py-2 mb-1 position-relative">
+                                                    <a href="#" class="head-bar-link text-decoration-none d-block text-left fs-18 fw700 cl pb-2 khosimcom">Khosim.com</a>
+                                                    <label class="bar-close position-absolute all-cursor" for="bar-id">
+                                                        <i class="far fa-times all-cursor"></i>
+                                                    </label>
+        
+                                                </div>
+                                                <div class="bar-danhmuc">
+                                                    <a href="#" class="text-decoration-none danh-mucsim fw500 fs-15 text-uppercase">Danh mục sim</a>
+                                                    <div class="list-group bar-left">
+                                                        <a href="#" class="list-group-item list-group-item-action text-decoration-none fs-15 position-relative cl333" aria-current="true"><i class="far fa-sim-card fs-20 me-2"></i>Sim theo nhà mạng <i class="fas fa-caret-down fs-18 position-absolute pos-icon"></i></a>
+                                                        <a href="#" class="list-group-item list-group-item-action text-decoration-none fs-15 position-relative cl333"><i class="far fa-sim-card fs-20 me-2"></i>Sim theo giá<i class="fas fa-caret-down fs-18 position-absolute pos-icon"></i></a>
+                                                        <a href="#" class="list-group-item list-group-item-action text-decoration-none fs-15 position-relative cl333"><i class="far fa-sim-card fs-20 me-2"></i>Sim theo loại<i class="fas fa-caret-down fs-18 position-absolute pos-icon"></i></a>
+                                                        <a href="#" class="list-group-item list-group-item-action text-decoration-none fs-15 position-relative cl333"><i class="far fa-sim-card fs-20 me-2"></i>Sim theo năm sinh<i class="fas fa-caret-down fs-18 position-absolute pos-icon"></i></a><i class=""></i>
+                                                      </div>
+                                                </div>
+                                                <div class="bar-danhmuc">
+                                                    <a href="#" class="text-decoration-none danh-muc fw500 text-uppercase">Danh mục</a>
+                                                    <div class="list-group bar-left">
+                                                        <a href="#" class="list-group-item list-group-item-action text-decoration-none fs-15 cl333" aria-current="true"><i class="far fa-credit-card fs-20 me-2"></i>Đặt mua & thanh toán</a>
+                                                        <a href="#" class="list-group-item list-group-item-action text-decoration-none fs-15 cl333"><i class="fas fa-newspaper fs-20 me-2"></i>Tin tức</a>
+                                                        <a href="#" class="list-group-item list-group-item-action text-decoration-none fs-15 cl333"><i class="fas fa-address-card fs-20 me-2"></i>Liên hệ</a>
+                                                      </div>
+                                                </div>
 
-                        </div>
+                                            </ul>
+                                        </nav>
+                                        <span class="fw-400 fs-14 fw-normal cl333 danh-muc-sim">&nbsp;&nbsp;DANH MỤC SIM</span>
+                                    </div>   
+                            </div>
                     </div>
-                    <div class="col-6 col-md-6 hsearch">
+                    <div class="col-9 col-sm-9 col-md-9 col-lg-6 hsearch">
                         <div class="tmenu-box rounded">
                             <div class="input-group input-group-sm rounded ux d-flex justify-content-between">
                                 <div class="input-group-text cl288 fs400 fs-14 clfff bg-light" id="tcm-wrapper">
@@ -83,7 +114,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-3">
+                    <div class="col-md-3 col-lg-3 h_help">
                         <div class="tmenu-right d-flex justify-content-between">
                             <div class="t-help ic-sepa1 position-relative">
                                 <a href="#" class="text-decoration-none">
@@ -110,51 +141,50 @@
         <div class="menu-top-1 border bg-menu ">
             <div class="container">
                 <nav>
-                    <ul
-                        class="list-inline list-menu d-flex flex-row flex-wrap justify-content-between align-items-center">
-                        <li class="list-inline-item align-middle position-relative item-active">
-                            <a href="trangchu.html" class="text-decoration-none fs-14 fw-normal text-uppercase clfff">
+                    <ul class="list-inline list-menu d-flex justify-content-between align-items-center">
+                        <li class="list-inline-item list-item position-relative">
+                            <a href="trangchu.html" class="list-item-link text-decoration-none fs-14 fw-normal text-uppercase clfff">
                                 <span><i class="fas fa-home-lg-alt"></i> Trang chủ</span>
                                 <span class="separate3"></span>
                             </a>
                         </li>
-                        <li class="list-inline-item align-middle">
+                        <li class="list-inline-item list-item">
                             <a href="ketquatimsim.html"
-                                class="text-decoration-none fs-14 fw-normal text-uppercase clfff">
+                                class="list-item-link text-decoration-none fs-14 fw-normal text-uppercase clfff">
                                 <i class="far fa-sim-card"></i> Sim theo mạng</a>
 
                         </li>
-                        <li class="list-inline-item align-middle">
-                            <a href="khongcosim.html" class="text-decoration-none fs-14 fw-normal text-uppercase clfff">
+                        <li class="list-inline-item list-item">
+                            <a href="khongcosim.html" class="list-item-link text-decoration-none fs-14 fw-normal text-uppercase clfff">
                                 <i class="fas fa-usd-circle"></i> Sim theo giá</a>
                         </li>
-                        <li class="list-inline-item align-middle">
+                        <li class="list-inline-item list-item">
                             <a href="datmuathanhcong.html"
-                                class="text-decoration-none fs-14 fw-normal text-uppercase clfff">
+                                class="list-item-link text-decoration-none fs-14 fw-normal text-uppercase clfff">
                                 <i class="far fa-sim-card"></i> Sim theo loại</a>
                         </li>
-                        <li class="list-inline-item align-middle">
-                            <a href="page404.html" class="text-decoration-none fs-14 fw-normal text-uppercase clfff">
-                                <i class="far fa-sim-card"></i> Sim theo năm sinh</a>
+                        <li class="list-inline-item list-item">
+                            <a href="page404.html" class="list-item-link text-decoration-none fs-14 fw-normal text-uppercase clfff">
+                                <i class="far fa-sim-card"></i> Sim năm sinh</a>
                         </li>
-                        <li class="list-inline-item align-middle">
-                            <a href="thanhtoan.html" class="text-decoration-none fs-14 fw-normal text-uppercase clfff">
+                        <li class="list-inline-item list-item">
+                            <a href="thanhtoan.html" class="list-item-link text-decoration-none fs-14 fw-normal text-uppercase clfff">
                                 <i class="fal fa-credit-card-front"></i> Thanh toán</a>
                         </li>
-                        <li class="list-inline-item align-middle">
-                            <a href="tintuc.html" class="text-decoration-none fs-14 fw-normal text-uppercase clfff">
+                        <li class="list-inline-item list-item">
+                            <a href="tintuc.html" class="list-item-link text-decoration-none fs-14 fw-normal text-uppercase clfff">
                                 <i class="fal fa-newspaper"></i> Tin tức</a>
                         </li>
                     </ul>
                 </nav>
+
             </div>
         </div>
     </header>
-
     <main>
         <div class="container mt-3">
             <div class="row">
-                <div class="col-md-9">
+                <div class="col-md-12 col-lg-9">
                     <div class="block-tim-sim border px-2 rounded">
                         <div
                             class="title fw500 fs-16 fs cl-prm text-uppercase border-bottom mt-1 pb-2 position-relative text-center">
@@ -348,10 +378,11 @@
                             </div>
                         </div>
                     </div>
-                    <div class="fw500 fs-16 fs cl-prm border-bottom mt-3 pb-1 mb-1 position-relative">
-                        <h1 class="text-uppercase fs-15 fw700 ">Sim 0987.666.888</h1>
+                    <div class="fw500 fs-16 fs cl-prm border-bottom mt-3 pb-1 mb-1 position-relative d-flex simsodep hide-mobile">
+                        <h1 class="text-uppercase fs-15 fw700">Sim 0987.666.888</h1>
                         <span class="separate"></span>
                     </div>
+
                     <div class="no-sim py-3 mt-2" style="background: #F4F4F4;">
                             <span class="d-flex justify-content-center align-items-center">
                                 <span class="fs-14  fw400 cla9a">Số sim:&nbsp;</span>
@@ -373,7 +404,7 @@
                     <!-- Products -->
                     <div class="block-product ">
                         <div class="row prd-list">
-                            <div class="col-md-3 rounded prd-item position-relative mt-2">
+                            <div class="col-6 col-md-4 col-lg-3 rounded prd-item position-relative mt-2">
                                 <a href="datmua.html"
                                     class="prd-full d-flex justify-content-center align-items-center text-decoration-none">
                                     <i class="prd-cart fs-14  fas fa-shopping-cart"></i>
@@ -394,7 +425,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-md-3 rounded prd-item position-relative mt-2">
+                            <div class="col-6 col-md-4 col-lg-3 rounded prd-item position-relative mt-2">
                                 <a href="datmua.html"
                                     class="prd-full d-flex justify-content-center align-items-center text-decoration-none">
                                     <i class="prd-cart fs-14  fas fa-shopping-cart"></i>
@@ -415,7 +446,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-md-3 rounded prd-item position-relative mt-2">
+                            <div class="col-6 col-md-4 col-lg-3 rounded prd-item position-relative mt-2">
                                 <a href="datmua.html"
                                     class="prd-full d-flex justify-content-center align-items-center text-decoration-none">
                                     <i class="prd-cart fs-14  fas fa-shopping-cart"></i>
@@ -436,7 +467,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-md-3 rounded prd-item position-relative mt-2">
+                            <div class="col-6 col-md-4 col-lg-3 rounded prd-item position-relative mt-2">
                                 <a href="datmua.html"
                                     class="prd-full d-flex justify-content-center align-items-center text-decoration-none">
                                     <i class="prd-cart fs-14  fas fa-shopping-cart"></i>
@@ -457,7 +488,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-md-3 rounded prd-item position-relative mt-2">
+                            <div class="col-6 col-md-4 col-lg-3 rounded prd-item position-relative mt-2">
                                 <a href="datmua.html"
                                     class="prd-full d-flex justify-content-center align-items-center text-decoration-none">
                                     <i class="prd-cart fs-14  fas fa-shopping-cart"></i>
@@ -478,7 +509,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-md-3 rounded prd-item position-relative mt-2">
+                            <div class="col-6 col-md-4 col-lg-3 rounded prd-item position-relative mt-2">
                                 <a href="datmua.html"
                                     class="prd-full d-flex justify-content-center align-items-center text-decoration-none">
                                     <i class="prd-cart fs-14  fas fa-shopping-cart"></i>
@@ -499,7 +530,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-md-3 rounded prd-item position-relative mt-2">
+                            <div class="col-6 col-md-4 col-lg-3 rounded prd-item position-relative mt-2">
                                 <a href="datmua.html"
                                     class="prd-full d-flex justify-content-center align-items-center text-decoration-none">
                                     <i class="prd-cart fs-14  fas fa-shopping-cart"></i>
@@ -520,7 +551,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-md-3 rounded prd-item position-relative mt-2">
+                            <div class="col-6 col-md-4 col-lg-3 rounded prd-item position-relative mt-2">
                                 <a href="datmua.html"
                                     class="prd-full d-flex justify-content-center align-items-center text-decoration-none">
                                     <i class="prd-cart fs-14  fas fa-shopping-cart"></i>
@@ -541,7 +572,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-md-3 rounded prd-item position-relative mt-2">
+                            <div class="col-6 col-md-4 col-lg-3 rounded prd-item position-relative mt-2">
                                 <a href="datmua.html"
                                     class="prd-full d-flex justify-content-center align-items-center text-decoration-none">
                                     <i class="prd-cart fs-14  fas fa-shopping-cart"></i>
@@ -562,7 +593,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-md-3 rounded prd-item position-relative mt-2">
+                            <div class="col-6 col-md-4 col-lg-3 rounded prd-item position-relative mt-2">
                                 <a href="datmua.html"
                                     class="prd-full d-flex justify-content-center align-items-center text-decoration-none">
                                     <i class="prd-cart fs-14  fas fa-shopping-cart"></i>
@@ -583,7 +614,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-md-3 rounded prd-item position-relative mt-2">
+                            <div class="col-6 col-md-4 col-lg-3 rounded prd-item position-relative mt-2">
                                 <a href="datmua.html"
                                     class="prd-full d-flex justify-content-center align-items-center text-decoration-none">
                                     <i class="prd-cart fs-14  fas fa-shopping-cart"></i>
@@ -604,7 +635,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-md-3 rounded prd-item position-relative mt-2">
+                            <div class="col-6 col-md-4 col-lg-3 rounded prd-item position-relative mt-2">
                                 <a href="datmua.html"
                                     class="prd-full d-flex justify-content-center align-items-center text-decoration-none">
                                     <i class="prd-cart fs-14  fas fa-shopping-cart"></i>
@@ -625,7 +656,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-md-3 rounded prd-item position-relative mt-2">
+                            <div class="col-6 col-md-4 col-lg-3 rounded prd-item position-relative mt-2">
                                 <a href="datmua.html"
                                     class="prd-full d-flex justify-content-center align-items-center text-decoration-none">
                                     <i class="prd-cart fs-14  fas fa-shopping-cart"></i>
@@ -646,7 +677,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-md-3 rounded prd-item position-relative mt-2">
+                            <div class="col-6 col-md-4 col-lg-3 rounded prd-item position-relative mt-2">
                                 <a href="datmua.html"
                                     class="prd-full d-flex justify-content-center align-items-center text-decoration-none">
                                     <i class="prd-cart fs-14  fas fa-shopping-cart"></i>
@@ -667,7 +698,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-md-3 rounded prd-item position-relative mt-2">
+                            <div class="col-6 col-md-4 col-lg-3 rounded prd-item position-relative mt-2">
                                 <a href="datmua.html"
                                     class="prd-full d-flex justify-content-center align-items-center text-decoration-none">
                                     <i class="prd-cart fs-14  fas fa-shopping-cart"></i>
@@ -688,7 +719,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-md-3 rounded prd-item position-relative mt-2">
+                            <div class="col-6 col-md-4 col-lg-3 rounded prd-item position-relative mt-2">
                                 <a href="datmua.html"
                                     class="prd-full d-flex justify-content-center align-items-center text-decoration-none">
                                     <i class="prd-cart fs-14  fas fa-shopping-cart"></i>
@@ -709,7 +740,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-md-3 rounded prd-item position-relative mt-2">
+                            <div class="col-6 col-md-4 col-lg-3 rounded prd-item position-relative mt-2">
                                 <a href="datmua.html"
                                     class="prd-full d-flex justify-content-center align-items-center text-decoration-none">
                                     <i class="prd-cart fs-14  fas fa-shopping-cart"></i>
@@ -730,7 +761,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-md-3 rounded prd-item position-relative mt-2">
+                            <div class="col-6 col-md-4 col-lg-3 rounded prd-item position-relative mt-2">
                                 <a href="datmua.html"
                                     class="prd-full d-flex justify-content-center align-items-center text-decoration-none">
                                     <i class="prd-cart fs-14  fas fa-shopping-cart"></i>
@@ -751,7 +782,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-md-3 rounded prd-item position-relative mt-2">
+                            <div class="col-6 col-md-4 col-lg-3 rounded prd-item position-relative mt-2">
                                 <a href="datmua.html"
                                     class="prd-full d-flex justify-content-center align-items-center text-decoration-none">
                                     <i class="prd-cart fs-14  fas fa-shopping-cart"></i>
@@ -772,7 +803,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-md-3 rounded prd-item position-relative mt-2">
+                            <div class="col-6 col-md-4 col-lg-3 rounded prd-item position-relative mt-2">
                                 <a href="datmua.html"
                                     class="prd-full d-flex justify-content-center align-items-center text-decoration-none">
                                     <i class="prd-cart fs-14  fas fa-shopping-cart"></i>
@@ -793,7 +824,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-md-3 rounded prd-item position-relative mt-2">
+                            <div class="col-6 col-md-4 col-lg-3 rounded prd-item position-relative mt-2">
                                 <a href="datmua.html"
                                     class="prd-full d-flex justify-content-center align-items-center text-decoration-none">
                                     <i class="prd-cart fs-14  fas fa-shopping-cart"></i>
@@ -814,7 +845,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-md-3 rounded prd-item position-relative mt-2">
+                            <div class="col-6 col-md-4 col-lg-3 rounded prd-item position-relative mt-2">
                                 <a href="datmua.html"
                                     class="prd-full d-flex justify-content-center align-items-center text-decoration-none">
                                     <i class="prd-cart fs-14  fas fa-shopping-cart"></i>
@@ -835,7 +866,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-md-3 rounded prd-item position-relative mt-2">
+                            <div class="col-6 col-md-4 col-lg-3 rounded prd-item position-relative mt-2">
                                 <a href="datmua.html"
                                     class="prd-full d-flex justify-content-center align-items-center text-decoration-none">
                                     <i class="prd-cart fs-14  fas fa-shopping-cart"></i>
@@ -856,7 +887,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-md-3 rounded prd-item position-relative mt-2">
+                            <div class="col-6 col-md-4 col-lg-3 rounded prd-item position-relative mt-2">
                                 <a href="datmua.html"
                                     class="prd-full d-flex justify-content-center align-items-center text-decoration-none">
                                     <i class="prd-cart fs-14  fas fa-shopping-cart"></i>
@@ -877,7 +908,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-md-3 rounded prd-item position-relative mt-2">
+                            <div class="col-6 col-md-4 col-lg-3 rounded prd-item position-relative mt-2">
                                 <a href="datmua.html"
                                     class="prd-full d-flex justify-content-center align-items-center text-decoration-none">
                                     <i class="prd-cart fs-14  fas fa-shopping-cart"></i>
@@ -898,7 +929,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-md-3 rounded prd-item position-relative mt-2">
+                            <div class="col-6 col-md-4 col-lg-3 rounded prd-item position-relative mt-2">
                                 <a href="datmua.html"
                                     class="prd-full d-flex justify-content-center align-items-center text-decoration-none">
                                     <i class="prd-cart fs-14  fas fa-shopping-cart"></i>
@@ -919,7 +950,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-md-3 rounded prd-item position-relative mt-2">
+                            <div class="col-6 col-md-4 col-lg-3 rounded prd-item position-relative mt-2">
                                 <a href="datmua.html"
                                     class="prd-full d-flex justify-content-center align-items-center text-decoration-none">
                                     <i class="prd-cart fs-14  fas fa-shopping-cart"></i>
@@ -940,7 +971,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-md-3 rounded prd-item position-relative mt-2">
+                            <div class="col-6 col-md-4 col-lg-3 rounded prd-item position-relative mt-2">
                                 <a href="datmua.html"
                                     class="prd-full d-flex justify-content-center align-items-center text-decoration-none">
                                     <i class="prd-cart fs-14  fas fa-shopping-cart"></i>
@@ -961,7 +992,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-md-3 rounded prd-item position-relative mt-2">
+                            <div class="col-6 col-md-4 col-lg-3 rounded prd-item position-relative mt-2">
                                 <a href="datmua.html"
                                     class="prd-full d-flex justify-content-center align-items-center text-decoration-none">
                                     <i class="prd-cart fs-14  fas fa-shopping-cart"></i>
@@ -982,7 +1013,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-md-3 rounded prd-item position-relative mt-2">
+                            <div class="col-6 col-md-4 col-lg-3 rounded prd-item position-relative mt-2">
                                 <a href="datmua.html"
                                     class="prd-full d-flex justify-content-center align-items-center text-decoration-none">
                                     <i class="prd-cart fs-14  fas fa-shopping-cart"></i>
@@ -1003,7 +1034,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-md-3 rounded prd-item position-relative mt-2">
+                            <div class="col-6 col-md-4 col-lg-3 rounded prd-item position-relative mt-2">
                                 <a href="datmua.html"
                                     class="prd-full d-flex justify-content-center align-items-center text-decoration-none">
                                     <i class="prd-cart fs-14  fas fa-shopping-cart"></i>
@@ -1024,7 +1055,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-md-3 rounded prd-item position-relative mt-2">
+                            <div class="col-6 col-md-4 col-lg-3 rounded prd-item position-relative mt-2">
                                 <a href="datmua.html"
                                     class="prd-full d-flex justify-content-center align-items-center text-decoration-none">
                                     <i class="prd-cart fs-14  fas fa-shopping-cart"></i>
@@ -1045,7 +1076,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-md-3 rounded prd-item position-relative mt-2">
+                            <div class="col-6 col-md-4 col-lg-3 rounded prd-item position-relative mt-2">
                                 <a href="datmua.html"
                                     class="prd-full d-flex justify-content-center align-items-center text-decoration-none">
                                     <i class="prd-cart fs-14  fas fa-shopping-cart"></i>
@@ -1066,7 +1097,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-md-3 rounded prd-item position-relative mt-2">
+                            <div class="col-6 col-md-4 col-lg-3 rounded prd-item position-relative mt-2">
                                 <a href="datmua.html"
                                     class="prd-full d-flex justify-content-center align-items-center text-decoration-none">
                                     <i class="prd-cart fs-14  fas fa-shopping-cart"></i>
@@ -1087,7 +1118,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-md-3 rounded prd-item position-relative mt-2">
+                            <div class="col-6 col-md-4 col-lg-3 rounded prd-item position-relative mt-2">
                                 <a href="datmua.html"
                                     class="prd-full d-flex justify-content-center align-items-center text-decoration-none">
                                     <i class="prd-cart fs-14  fas fa-shopping-cart"></i>
@@ -1108,7 +1139,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-md-3 rounded prd-item position-relative mt-2">
+                            <div class="col-6 col-md-4 col-lg-3 rounded prd-item position-relative mt-2">
                                 <a href="datmua.html"
                                     class="prd-full d-flex justify-content-center align-items-center text-decoration-none">
                                     <i class="prd-cart fs-14  fas fa-shopping-cart"></i>
@@ -1129,7 +1160,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-md-3 rounded prd-item position-relative mt-2">
+                            <div class="col-6 col-md-4 col-lg-3 rounded prd-item position-relative mt-2">
                                 <a href="datmua.html"
                                     class="prd-full d-flex justify-content-center align-items-center text-decoration-none">
                                     <i class="prd-cart fs-14  fas fa-shopping-cart"></i>
@@ -1150,7 +1181,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-md-3 rounded prd-item position-relative mt-2">
+                            <div class="col-6 col-md-4 col-lg-3 rounded prd-item position-relative mt-2">
                                 <a href="datmua.html"
                                     class="prd-full d-flex justify-content-center align-items-center text-decoration-none">
                                     <i class="prd-cart fs-14  fas fa-shopping-cart"></i>
@@ -1171,7 +1202,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-md-3 rounded prd-item position-relative mt-2">
+                            <div class="col-6 col-md-4 col-lg-3 rounded prd-item position-relative mt-2">
                                 <a href="datmua.html"
                                     class="prd-full d-flex justify-content-center align-items-center text-decoration-none">
                                     <i class="prd-cart fs-14  fas fa-shopping-cart"></i>
@@ -1192,7 +1223,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-md-3 rounded prd-item position-relative mt-2">
+                            <div class="col-6 col-md-4 col-lg-3 rounded prd-item position-relative mt-2">
                                 <a href="datmua.html"
                                     class="prd-full d-flex justify-content-center align-items-center text-decoration-none">
                                     <i class="prd-cart fs-14  fas fa-shopping-cart"></i>
@@ -1213,7 +1244,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-md-3 rounded prd-item position-relative mt-2">
+                            <div class="col-6 col-md-4 col-lg-3 rounded prd-item position-relative mt-2">
                                 <a href="datmua.html"
                                     class="prd-full d-flex justify-content-center align-items-center text-decoration-none">
                                     <i class="prd-cart fs-14  fas fa-shopping-cart"></i>
@@ -1234,7 +1265,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-md-3 rounded prd-item position-relative mt-2">
+                            <div class="col-6 col-md-4 col-lg-3 rounded prd-item position-relative mt-2">
                                 <a href="datmua.html"
                                     class="prd-full d-flex justify-content-center align-items-center text-decoration-none">
                                     <i class="prd-cart fs-14  fas fa-shopping-cart"></i>
@@ -1255,7 +1286,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-md-3 rounded prd-item position-relative mt-2">
+                            <div class="col-6 col-md-4 col-lg-3 rounded prd-item position-relative mt-2">
                                 <a href="datmua.html"
                                     class="prd-full d-flex justify-content-center align-items-center text-decoration-none">
                                     <i class="prd-cart fs-14  fas fa-shopping-cart"></i>
@@ -1276,7 +1307,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-md-3 rounded prd-item position-relative mt-2">
+                            <div class="col-6 col-md-4 col-lg-3 rounded prd-item position-relative mt-2">
                                 <a href="datmua.html"
                                     class="prd-full d-flex justify-content-center align-items-center text-decoration-none">
                                     <i class="prd-cart fs-14  fas fa-shopping-cart"></i>
@@ -1297,7 +1328,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-md-3 rounded prd-item position-relative mt-2">
+                            <div class="col-6 col-md-4 col-lg-3 rounded prd-item position-relative mt-2">
                                 <a href="datmua.html"
                                     class="prd-full d-flex justify-content-center align-items-center text-decoration-none">
                                     <i class="prd-cart fs-14  fas fa-shopping-cart"></i>
@@ -1318,7 +1349,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-md-3 rounded prd-item position-relative mt-2">
+                            <div class="col-6 col-md-4 col-lg-3 rounded prd-item position-relative mt-2">
                                 <a href="datmua.html"
                                     class="prd-full d-flex justify-content-center align-items-center text-decoration-none">
                                     <i class="prd-cart fs-14  fas fa-shopping-cart"></i>
@@ -1339,7 +1370,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-md-3 rounded prd-item position-relative mt-2">
+                            <div class="col-6 col-md-4 col-lg-3 rounded prd-item position-relative mt-2">
                                 <a href="datmua.html"
                                     class="prd-full d-flex justify-content-center align-items-center text-decoration-none">
                                     <i class="prd-cart fs-14  fas fa-shopping-cart"></i>
@@ -1360,7 +1391,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-md-3 rounded prd-item position-relative mt-2">
+                            <div class="col-6 col-md-4 col-lg-3 rounded prd-item position-relative mt-2">
                                 <a href="datmua.html"
                                     class="prd-full d-flex justify-content-center align-items-center text-decoration-none">
                                     <i class="prd-cart fs-14  fas fa-shopping-cart"></i>
@@ -1381,7 +1412,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-md-3 rounded prd-item position-relative mt-2">
+                            <div class="col-6 col-md-4 col-lg-3 rounded prd-item position-relative mt-2">
                                 <a href="datmua.html"
                                     class="prd-full d-flex justify-content-center align-items-center text-decoration-none">
                                     <i class="prd-cart fs-14  fas fa-shopping-cart"></i>
@@ -1402,7 +1433,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-md-3 rounded prd-item position-relative mt-2">
+                            <div class="col-6 col-md-4 col-lg-3 rounded prd-item position-relative mt-2">
                                 <a href="datmua.html"
                                     class="prd-full d-flex justify-content-center align-items-center text-decoration-none">
                                     <i class="prd-cart fs-14  fas fa-shopping-cart"></i>
@@ -1423,7 +1454,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-md-3 rounded prd-item position-relative mt-2">
+                            <div class="col-6 col-md-4 col-lg-3 rounded prd-item position-relative mt-2">
                                 <a href="datmua.html"
                                     class="prd-full d-flex justify-content-center align-items-center text-decoration-none">
                                     <i class="prd-cart fs-14  fas fa-shopping-cart"></i>
@@ -1444,7 +1475,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-md-3 rounded prd-item position-relative mt-2">
+                            <div class="col-6 col-md-4 col-lg-3 rounded prd-item position-relative mt-2">
                                 <a href="datmua.html"
                                     class="prd-full d-flex justify-content-center align-items-center text-decoration-none">
                                     <i class="prd-cart fs-14  fas fa-shopping-cart"></i>
@@ -1465,7 +1496,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-md-3 rounded prd-item position-relative mt-2">
+                            <div class="col-6 col-md-4 col-lg-3 rounded prd-item position-relative mt-2">
                                 <a href="datmua.html"
                                     class="prd-full d-flex justify-content-center align-items-center text-decoration-none">
                                     <i class="prd-cart fs-14  fas fa-shopping-cart"></i>
@@ -1486,7 +1517,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-md-3 rounded prd-item position-relative mt-2">
+                            <div class="col-6 col-md-4 col-lg-3 rounded prd-item position-relative mt-2">
                                 <a href="datmua.html"
                                     class="prd-full d-flex justify-content-center align-items-center text-decoration-none">
                                     <i class="prd-cart fs-14  fas fa-shopping-cart"></i>
@@ -1507,7 +1538,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-md-3 rounded prd-item position-relative mt-2">
+                            <div class="col-6 col-md-4 col-lg-3 rounded prd-item position-relative mt-2">
                                 <a href="datmua.html"
                                     class="prd-full d-flex justify-content-center align-items-center text-decoration-none">
                                     <i class="prd-cart fs-14  fas fa-shopping-cart"></i>
@@ -1528,7 +1559,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-md-3 rounded prd-item position-relative mt-2">
+                            <div class="col-6 col-md-4 col-lg-3 rounded prd-item position-relative mt-2">
                                 <a href="datmua.html"
                                     class="prd-full d-flex justify-content-center align-items-center text-decoration-none">
                                     <i class="prd-cart fs-14  fas fa-shopping-cart"></i>
@@ -1549,7 +1580,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-md-3 rounded prd-item position-relative mt-2">
+                            <div class="col-6 col-md-4 col-lg-3 rounded prd-item position-relative mt-2">
                                 <a href="datmua.html"
                                     class="prd-full d-flex justify-content-center align-items-center text-decoration-none">
                                     <i class="prd-cart fs-14  fas fa-shopping-cart"></i>
@@ -1570,7 +1601,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-md-3 rounded prd-item position-relative mt-2">
+                            <div class="col-6 col-md-4 col-lg-3 rounded prd-item position-relative mt-2">
                                 <a href="datmua.html"
                                     class="prd-full d-flex justify-content-center align-items-center text-decoration-none">
                                     <i class="prd-cart fs-14  fas fa-shopping-cart"></i>
@@ -1591,7 +1622,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-md-3 rounded prd-item position-relative mt-2">
+                            <div class="col-6 col-md-4 col-lg-3 rounded prd-item position-relative mt-2">
                                 <a href="datmua.html"
                                     class="prd-full d-flex justify-content-center align-items-center text-decoration-none">
                                     <i class="prd-cart fs-14  fas fa-shopping-cart"></i>
@@ -1612,7 +1643,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-md-3 rounded prd-item position-relative mt-2">
+                            <div class="col-6 col-md-4 col-lg-3 rounded prd-item position-relative mt-2">
                                 <a href="datmua.html"
                                     class="prd-full d-flex justify-content-center align-items-center text-decoration-none">
                                     <i class="prd-cart fs-14  fas fa-shopping-cart"></i>
@@ -1633,7 +1664,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-md-3 rounded prd-item position-relative mt-2">
+                            <div class="col-6 col-md-4 col-lg-3 rounded prd-item position-relative mt-2">
                                 <a href="datmua.html"
                                     class="prd-full d-flex justify-content-center align-items-center text-decoration-none">
                                     <i class="prd-cart fs-14  fas fa-shopping-cart"></i>
@@ -1654,7 +1685,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-md-3 rounded prd-item position-relative mt-2">
+                            <div class="col-6 col-md-4 col-lg-3 rounded prd-item position-relative mt-2">
                                 <a href="datmua.html"
                                     class="prd-full d-flex justify-content-center align-items-center text-decoration-none">
                                     <i class="prd-cart fs-14  fas fa-shopping-cart"></i>
@@ -1675,7 +1706,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-md-3 rounded prd-item position-relative mt-2">
+                            <div class="col-6 col-md-4 col-lg-3 rounded prd-item position-relative mt-2">
                                 <a href="datmua.html"
                                     class="prd-full d-flex justify-content-center align-items-center text-decoration-none">
                                     <i class="prd-cart fs-14  fas fa-shopping-cart"></i>
@@ -1696,7 +1727,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-md-3 rounded prd-item position-relative mt-2">
+                            <div class="col-6 col-md-4 col-lg-3 rounded prd-item position-relative mt-2">
                                 <a href="datmua.html"
                                     class="prd-full d-flex justify-content-center align-items-center text-decoration-none">
                                     <i class="prd-cart fs-14  fas fa-shopping-cart"></i>
@@ -1717,7 +1748,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-md-3 rounded prd-item position-relative mt-2">
+                            <div class="col-6 col-md-4 col-lg-3 rounded prd-item position-relative mt-2">
                                 <a href="datmua.html"
                                     class="prd-full d-flex justify-content-center align-items-center text-decoration-none">
                                     <i class="prd-cart fs-14  fas fa-shopping-cart"></i>
@@ -1738,7 +1769,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-md-3 rounded prd-item position-relative mt-2">
+                            <div class="col-6 col-md-4 col-lg-3 rounded prd-item position-relative mt-2">
                                 <a href="datmua.html"
                                     class="prd-full d-flex justify-content-center align-items-center text-decoration-none">
                                     <i class="prd-cart fs-14  fas fa-shopping-cart"></i>
@@ -1759,7 +1790,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-md-3 rounded prd-item position-relative mt-2">
+                            <div class="col-6 col-md-4 col-lg-3 rounded prd-item position-relative mt-2">
                                 <a href="datmua.html"
                                     class="prd-full d-flex justify-content-center align-items-center text-decoration-none">
                                     <i class="prd-cart fs-14  fas fa-shopping-cart"></i>
@@ -1780,7 +1811,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-md-3 rounded prd-item position-relative mt-2">
+                            <div class="col-6 col-md-4 col-lg-3 rounded prd-item position-relative mt-2">
                                 <a href="datmua.html"
                                     class="prd-full d-flex justify-content-center align-items-center text-decoration-none">
                                     <i class="prd-cart fs-14  fas fa-shopping-cart"></i>
@@ -1801,7 +1832,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-md-3 rounded prd-item position-relative mt-2">
+                            <div class="col-6 col-md-4 col-lg-3 rounded prd-item position-relative mt-2">
                                 <a href="datmua.html"
                                     class="prd-full d-flex justify-content-center align-items-center text-decoration-none">
                                     <i class="prd-cart fs-14  fas fa-shopping-cart"></i>
@@ -1822,7 +1853,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-md-3 rounded prd-item position-relative mt-2">
+                            <div class="col-6 col-md-4 col-lg-3 rounded prd-item position-relative mt-2">
                                 <a href="datmua.html"
                                     class="prd-full d-flex justify-content-center align-items-center text-decoration-none">
                                     <i class="prd-cart fs-14  fas fa-shopping-cart"></i>
@@ -1843,7 +1874,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-md-3 rounded prd-item position-relative mt-2">
+                            <div class="col-6 col-md-4 col-lg-3 rounded prd-item position-relative mt-2">
                                 <a href="datmua.html"
                                     class="prd-full d-flex justify-content-center align-items-center text-decoration-none">
                                     <i class="prd-cart fs-14  fas fa-shopping-cart"></i>
@@ -1864,7 +1895,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-md-3 rounded prd-item position-relative mt-2">
+                            <div class="col-6 col-md-4 col-lg-3 rounded prd-item position-relative mt-2">
                                 <a href="datmua.html"
                                     class="prd-full d-flex justify-content-center align-items-center text-decoration-none">
                                     <i class="prd-cart fs-14  fas fa-shopping-cart"></i>
@@ -1885,7 +1916,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-md-3 rounded prd-item position-relative mt-2">
+                            <div class="col-6 col-md-4 col-lg-3 rounded prd-item position-relative mt-2">
                                 <a href="datmua.html"
                                     class="prd-full d-flex justify-content-center align-items-center text-decoration-none">
                                     <i class="prd-cart fs-14  fas fa-shopping-cart"></i>
@@ -1906,7 +1937,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-md-3 rounded prd-item position-relative mt-2">
+                            <div class="col-6 col-md-4 col-lg-3 rounded prd-item position-relative mt-2">
                                 <a href="datmua.html"
                                     class="prd-full d-flex justify-content-center align-items-center text-decoration-none">
                                     <i class="prd-cart fs-14  fas fa-shopping-cart"></i>
@@ -1927,7 +1958,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-md-3 rounded prd-item position-relative mt-2">
+                            <div class="col-6 col-md-4 col-lg-3 rounded prd-item position-relative mt-2">
                                 <a href="datmua.html"
                                     class="prd-full d-flex justify-content-center align-items-center text-decoration-none">
                                     <i class="prd-cart fs-14  fas fa-shopping-cart"></i>
@@ -1948,7 +1979,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-md-3 rounded prd-item position-relative mt-2">
+                            <div class="col-6 col-md-4 col-lg-3 rounded prd-item position-relative mt-2">
                                 <a href="datmua.html"
                                     class="prd-full d-flex justify-content-center align-items-center text-decoration-none">
                                     <i class="prd-cart fs-14  fas fa-shopping-cart"></i>
@@ -1969,7 +2000,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-md-3 rounded prd-item position-relative mt-2">
+                            <div class="col-6 col-md-4 col-lg-3 rounded prd-item position-relative mt-2">
                                 <a href="datmua.html"
                                     class="prd-full d-flex justify-content-center align-items-center text-decoration-none">
                                     <i class="prd-cart fs-14  fas fa-shopping-cart"></i>
@@ -1990,7 +2021,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-md-3 rounded prd-item position-relative mt-2">
+                            <div class="col-6 col-md-4 col-lg-3 rounded prd-item position-relative mt-2">
                                 <a href="datmua.html"
                                     class="prd-full d-flex justify-content-center align-items-center text-decoration-none">
                                     <i class="prd-cart fs-14  fas fa-shopping-cart"></i>
@@ -2011,7 +2042,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-md-3 rounded prd-item position-relative mt-2">
+                            <div class="col-6 col-md-4 col-lg-3 rounded prd-item position-relative mt-2">
                                 <a href="datmua.html"
                                     class="prd-full d-flex justify-content-center align-items-center text-decoration-none">
                                     <i class="prd-cart fs-14  fas fa-shopping-cart"></i>
@@ -2032,7 +2063,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-md-3 rounded prd-item position-relative mt-2">
+                            <div class="col-6 col-md-4 col-lg-3 rounded prd-item position-relative mt-2">
                                 <a href="datmua.html"
                                     class="prd-full d-flex justify-content-center align-items-center text-decoration-none">
                                     <i class="prd-cart fs-14  fas fa-shopping-cart"></i>
@@ -2053,7 +2084,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-md-3 rounded prd-item position-relative mt-2">
+                            <div class="col-6 col-md-4 col-lg-3 rounded prd-item position-relative mt-2">
                                 <a href="datmua.html"
                                     class="prd-full d-flex justify-content-center align-items-center text-decoration-none">
                                     <i class="prd-cart fs-14  fas fa-shopping-cart"></i>
@@ -2074,7 +2105,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-md-3 rounded prd-item position-relative mt-2">
+                            <div class="col-6 col-md-4 col-lg-3 rounded prd-item position-relative mt-2">
                                 <a href="datmua.html"
                                     class="prd-full d-flex justify-content-center align-items-center text-decoration-none">
                                     <i class="prd-cart fs-14  fas fa-shopping-cart"></i>
@@ -2095,7 +2126,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-md-3 rounded prd-item position-relative mt-2">
+                            <div class="col-6 col-md-4 col-lg-3 rounded prd-item position-relative mt-2">
                                 <a href="datmua.html"
                                     class="prd-full d-flex justify-content-center align-items-center text-decoration-none">
                                     <i class="prd-cart fs-14  fas fa-shopping-cart"></i>
@@ -2116,7 +2147,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-md-3 rounded prd-item position-relative mt-2">
+                            <div class="col-6 col-md-4 col-lg-3 rounded prd-item position-relative mt-2">
                                 <a href="datmua.html"
                                     class="prd-full d-flex justify-content-center align-items-center text-decoration-none">
                                     <i class="prd-cart fs-14  fas fa-shopping-cart"></i>
@@ -2137,7 +2168,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-md-3 rounded prd-item position-relative mt-2">
+                            <div class="col-6 col-md-4 col-lg-3 rounded prd-item position-relative mt-2">
                                 <a href="datmua.html"
                                     class="prd-full d-flex justify-content-center align-items-center text-decoration-none">
                                     <i class="prd-cart fs-14  fas fa-shopping-cart"></i>
@@ -2158,7 +2189,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-md-3 rounded prd-item position-relative mt-2">
+                            <div class="col-6 col-md-4 col-lg-3 rounded prd-item position-relative mt-2">
                                 <a href="datmua.html"
                                     class="prd-full d-flex justify-content-center align-items-center text-decoration-none">
                                     <i class="prd-cart fs-14  fas fa-shopping-cart"></i>
@@ -2179,7 +2210,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-md-3 rounded prd-item position-relative mt-2">
+                            <div class="col-6 col-md-4 col-lg-3 rounded prd-item position-relative mt-2">
                                 <a href="datmua.html"
                                     class="prd-full d-flex justify-content-center align-items-center text-decoration-none">
                                     <i class="prd-cart fs-14  fas fa-shopping-cart"></i>
@@ -2200,7 +2231,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-md-3 rounded prd-item position-relative mt-2">
+                            <div class="col-6 col-md-4 col-lg-3 rounded prd-item position-relative mt-2">
                                 <a href="datmua.html"
                                     class="prd-full d-flex justify-content-center align-items-center text-decoration-none">
                                     <i class="prd-cart fs-14  fas fa-shopping-cart"></i>
@@ -2221,7 +2252,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-md-3 rounded prd-item position-relative mt-2">
+                            <div class="col-6 col-md-4 col-lg-3 rounded prd-item position-relative mt-2">
                                 <a href="datmua.html"
                                     class="prd-full d-flex justify-content-center align-items-center text-decoration-none">
                                     <i class="prd-cart fs-14  fas fa-shopping-cart"></i>
@@ -2242,7 +2273,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-md-3 rounded prd-item position-relative mt-2">
+                            <div class="col-6 col-md-4 col-lg-3 rounded prd-item position-relative mt-2">
                                 <a href="datmua.html"
                                     class="prd-full d-flex justify-content-center align-items-center text-decoration-none">
                                     <i class="prd-cart fs-14  fas fa-shopping-cart"></i>
@@ -2263,7 +2294,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-md-3 rounded prd-item position-relative mt-2">
+                            <div class="col-6 col-md-4 col-lg-3 rounded prd-item position-relative mt-2">
                                 <a href="datmua.html"
                                     class="prd-full d-flex justify-content-center align-items-center text-decoration-none">
                                     <i class="prd-cart fs-14  fas fa-shopping-cart"></i>
@@ -2286,7 +2317,7 @@
                             </div>
 
 
-                            <div class="col-md-3 rounded prd-item position-relative mt-2">
+                            <div class="col-6 col-md-4 col-lg-3 rounded prd-item position-relative mt-2">
                                 <a href="datmua.html"
                                     class="prd-full d-flex justify-content-center align-items-center text-decoration-none">
                                     <i class="prd-cart fs-14  fas fa-shopping-cart"></i>
@@ -2307,7 +2338,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-md-3 rounded prd-item position-relative mt-2">
+                            <div class="col-6 col-md-4 col-lg-3 rounded prd-item position-relative mt-2">
                                 <a href="datmua.html"
                                     class="prd-full d-flex justify-content-center align-items-center text-decoration-none">
                                     <i class="prd-cart fs-14  fas fa-shopping-cart"></i>
@@ -2328,7 +2359,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-md-3 rounded prd-item position-relative mt-2">
+                            <div class="col-6 col-md-4 col-lg-3 rounded prd-item position-relative mt-2">
                                 <a href="datmua.html"
                                     class="prd-full d-flex justify-content-center align-items-center text-decoration-none">
                                     <i class="prd-cart fs-14  fas fa-shopping-cart"></i>
@@ -2349,7 +2380,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-md-3 rounded prd-item position-relative mt-2">
+                            <div class="col-6 col-md-4 col-lg-3 rounded prd-item position-relative mt-2">
                                 <a href="datmua.html"
                                     class="prd-full d-flex justify-content-center align-items-center text-decoration-none">
                                     <i class="prd-cart fs-14  fas fa-shopping-cart"></i>
@@ -2370,7 +2401,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-md-3 rounded prd-item position-relative mt-2">
+                            <div class="col-6 col-md-4 col-lg-3 rounded prd-item position-relative mt-2">
                                 <a href="datmua.html"
                                     class="prd-full d-flex justify-content-center align-items-center text-decoration-none">
                                     <i class="prd-cart fs-14  fas fa-shopping-cart"></i>
@@ -2391,7 +2422,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-md-3 rounded prd-item position-relative mt-2">
+                            <div class="col-6 col-md-4 col-lg-3 rounded prd-item position-relative mt-2">
                                 <a href="datmua.html"
                                     class="prd-full d-flex justify-content-center align-items-center text-decoration-none">
                                     <i class="prd-cart fs-14  fas fa-shopping-cart"></i>
@@ -2412,7 +2443,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-md-3 rounded prd-item position-relative mt-2">
+                            <div class="col-6 col-md-4 col-lg-3 rounded prd-item position-relative mt-2">
                                 <a href="datmua.html"
                                     class="prd-full d-flex justify-content-center align-items-center text-decoration-none">
                                     <i class="prd-cart fs-14  fas fa-shopping-cart"></i>
@@ -2433,7 +2464,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-md-3 rounded prd-item position-relative mt-2">
+                            <div class="col-6 col-md-4 col-lg-3 rounded prd-item position-relative mt-2">
                                 <a href="datmua.html"
                                     class="prd-full d-flex justify-content-center align-items-center text-decoration-none">
                                     <i class="prd-cart fs-14  fas fa-shopping-cart"></i>
@@ -2454,7 +2485,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-md-3 rounded prd-item position-relative mt-2">
+                            <div class="col-6 col-md-4 col-lg-3 rounded prd-item position-relative mt-2">
                                 <a href="datmua.html"
                                     class="prd-full d-flex justify-content-center align-items-center text-decoration-none">
                                     <i class="prd-cart fs-14  fas fa-shopping-cart"></i>
@@ -2475,7 +2506,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-md-3 rounded prd-item position-relative mt-2">
+                            <div class="col-6 col-md-4 col-lg-3 rounded prd-item position-relative mt-2">
                                 <a href="datmua.html"
                                     class="prd-full d-flex justify-content-center align-items-center text-decoration-none">
                                     <i class="prd-cart fs-14  fas fa-shopping-cart"></i>
@@ -2496,7 +2527,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-md-3 rounded prd-item position-relative mt-2">
+                            <div class="col-6 col-md-4 col-lg-3 rounded prd-item position-relative mt-2">
                                 <a href="datmua.html"
                                     class="prd-full d-flex justify-content-center align-items-center text-decoration-none">
                                     <i class="prd-cart fs-14  fas fa-shopping-cart"></i>
@@ -2517,7 +2548,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-md-3 rounded prd-item position-relative mt-2">
+                            <div class="col-6 col-md-4 col-lg-3 rounded prd-item position-relative mt-2">
                                 <a href="datmua.html"
                                     class="prd-full d-flex justify-content-center align-items-center text-decoration-none">
                                     <i class="prd-cart fs-14  fas fa-shopping-cart"></i>
@@ -2538,7 +2569,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-md-3 rounded prd-item position-relative mt-2">
+                            <div class="col-6 col-md-4 col-lg-3 rounded prd-item position-relative mt-2">
                                 <a href="datmua.html"
                                     class="prd-full d-flex justify-content-center align-items-center text-decoration-none">
                                     <i class="prd-cart fs-14  fas fa-shopping-cart"></i>
@@ -2559,7 +2590,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-md-3 rounded prd-item position-relative mt-2">
+                            <div class="col-6 col-md-4 col-lg-3 rounded prd-item position-relative mt-2">
                                 <a href="datmua.html"
                                     class="prd-full d-flex justify-content-center align-items-center text-decoration-none">
                                     <i class="prd-cart fs-14  fas fa-shopping-cart"></i>
@@ -2580,7 +2611,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-md-3 rounded prd-item position-relative mt-2">
+                            <div class="col-6 col-md-4 col-lg-3 rounded prd-item position-relative mt-2">
                                 <a href="datmua.html"
                                     class="prd-full d-flex justify-content-center align-items-center text-decoration-none">
                                     <i class="prd-cart fs-14  fas fa-shopping-cart"></i>
@@ -2601,7 +2632,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-md-3 rounded prd-item position-relative mt-2">
+                            <div class="col-6 col-md-4 col-lg-3 rounded prd-item position-relative mt-2">
                                 <a href="datmua.html"
                                     class="prd-full d-flex justify-content-center align-items-center text-decoration-none">
                                     <i class="prd-cart fs-14  fas fa-shopping-cart"></i>
@@ -2622,7 +2653,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-md-3 rounded prd-item position-relative mt-2">
+                            <div class="col-6 col-md-4 col-lg-3 rounded prd-item position-relative mt-2">
                                 <a href="datmua.html"
                                     class="prd-full d-flex justify-content-center align-items-center text-decoration-none">
                                     <i class="prd-cart fs-14  fas fa-shopping-cart"></i>
@@ -2643,7 +2674,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-md-3 rounded prd-item position-relative mt-2">
+                            <div class="col-6 col-md-4 col-lg-3 rounded prd-item position-relative mt-2">
                                 <a href="datmua.html"
                                     class="prd-full d-flex justify-content-center align-items-center text-decoration-none">
                                     <i class="prd-cart fs-14  fas fa-shopping-cart"></i>
@@ -2664,7 +2695,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-md-3 rounded prd-item position-relative mt-2">
+                            <div class="col-6 col-md-4 col-lg-3 rounded prd-item position-relative mt-2">
                                 <a href="datmua.html"
                                     class="prd-full d-flex justify-content-center align-items-center text-decoration-none">
                                     <i class="prd-cart fs-14  fas fa-shopping-cart"></i>
@@ -2685,7 +2716,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-md-3 rounded prd-item position-relative mt-2">
+                            <div class="col-6 col-md-4 col-lg-3 rounded prd-item position-relative mt-2">
                                 <a href="datmua.html"
                                     class="prd-full d-flex justify-content-center align-items-center text-decoration-none">
                                     <i class="prd-cart fs-14  fas fa-shopping-cart"></i>
@@ -2706,7 +2737,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-md-3 rounded prd-item position-relative mt-2">
+                            <div class="col-6 col-md-4 col-lg-3 rounded prd-item position-relative mt-2">
                                 <a href="datmua.html"
                                     class="prd-full d-flex justify-content-center align-items-center text-decoration-none">
                                     <i class="prd-cart fs-14  fas fa-shopping-cart"></i>
@@ -2727,7 +2758,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-md-3 rounded prd-item position-relative mt-2">
+                            <div class="col-6 col-md-4 col-lg-3 rounded prd-item position-relative mt-2">
                                 <a href="datmua.html"
                                     class="prd-full d-flex justify-content-center align-items-center text-decoration-none">
                                     <i class="prd-cart fs-14  fas fa-shopping-cart"></i>
@@ -2748,7 +2779,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-md-3 rounded prd-item position-relative mt-2">
+                            <div class="col-6 col-md-4 col-lg-3 rounded prd-item position-relative mt-2">
                                 <a href="datmua.html"
                                     class="prd-full d-flex justify-content-center align-items-center text-decoration-none">
                                     <i class="prd-cart fs-14  fas fa-shopping-cart"></i>
@@ -2769,7 +2800,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-md-3 rounded prd-item position-relative mt-2">
+                            <div class="col-6 col-md-4 col-lg-3 rounded prd-item position-relative mt-2">
                                 <a href="datmua.html"
                                     class="prd-full d-flex justify-content-center align-items-center text-decoration-none">
                                     <i class="prd-cart fs-14  fas fa-shopping-cart"></i>
@@ -2790,7 +2821,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-md-3 rounded prd-item position-relative mt-2">
+                            <div class="col-6 col-md-4 col-lg-3 rounded prd-item position-relative mt-2">
                                 <a href="datmua.html"
                                     class="prd-full d-flex justify-content-center align-items-center text-decoration-none">
                                     <i class="prd-cart fs-14  fas fa-shopping-cart"></i>
@@ -2811,7 +2842,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-md-3 rounded prd-item position-relative mt-2">
+                            <div class="col-6 col-md-4 col-lg-3 rounded prd-item position-relative mt-2">
                                 <a href="datmua.html"
                                     class="prd-full d-flex justify-content-center align-items-center text-decoration-none">
                                     <i class="prd-cart fs-14  fas fa-shopping-cart"></i>
@@ -2832,7 +2863,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-md-3 rounded prd-item position-relative mt-2">
+                            <div class="col-6 col-md-4 col-lg-3 rounded prd-item position-relative mt-2">
                                 <a href="datmua.html"
                                     class="prd-full d-flex justify-content-center align-items-center text-decoration-none">
                                     <i class="prd-cart fs-14  fas fa-shopping-cart"></i>
@@ -2853,7 +2884,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-md-3 rounded prd-item position-relative mt-2">
+                            <div class="col-6 col-md-4 col-lg-3 rounded prd-item position-relative mt-2">
                                 <a href="datmua.html"
                                     class="prd-full d-flex justify-content-center align-items-center text-decoration-none">
                                     <i class="prd-cart fs-14  fas fa-shopping-cart"></i>
@@ -2874,7 +2905,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-md-3 rounded prd-item position-relative mt-2">
+                            <div class="col-6 col-md-4 col-lg-3 rounded prd-item position-relative mt-2">
                                 <a href="datmua.html"
                                     class="prd-full d-flex justify-content-center align-items-center text-decoration-none">
                                     <i class="prd-cart fs-14  fas fa-shopping-cart"></i>
@@ -2895,7 +2926,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-md-3 rounded prd-item position-relative mt-2">
+                            <div class="col-6 col-md-4 col-lg-3 rounded prd-item position-relative mt-2">
                                 <a href="datmua.html"
                                     class="prd-full d-flex justify-content-center align-items-center text-decoration-none">
                                     <i class="prd-cart fs-14  fas fa-shopping-cart"></i>
@@ -2916,7 +2947,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-md-3 rounded prd-item position-relative mt-2">
+                            <div class="col-6 col-md-4 col-lg-3 rounded prd-item position-relative mt-2">
                                 <a href="datmua.html"
                                     class="prd-full d-flex justify-content-center align-items-center text-decoration-none">
                                     <i class="prd-cart fs-14  fas fa-shopping-cart"></i>
@@ -2937,7 +2968,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-md-3 rounded prd-item position-relative mt-2">
+                            <div class="col-6 col-md-4 col-lg-3 rounded prd-item position-relative mt-2">
                                 <a href="datmua.html"
                                     class="prd-full d-flex justify-content-center align-items-center text-decoration-none">
                                     <i class="prd-cart fs-14  fas fa-shopping-cart"></i>
@@ -2958,7 +2989,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-md-3 rounded prd-item position-relative mt-2">
+                            <div class="col-6 col-md-4 col-lg-3 rounded prd-item position-relative mt-2">
                                 <a href="datmua.html"
                                     class="prd-full d-flex justify-content-center align-items-center text-decoration-none">
                                     <i class="prd-cart fs-14  fas fa-shopping-cart"></i>
@@ -2994,18 +3025,17 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md">
-                    <div
-                        class="title fw500 fs-16 fs cl-prm text-uppercase border-bottom mb-3 position-relative text-center pt-hotline">
+                <div class="col-md col-lg">
+                    <div class="title fw500 fs-16 fs cl-prm text-uppercase border-bottom mb-3 position-relative text-center pt-hotline">
                         <span>Hotline</span>
                         <span class="separate1"></span>
                     </div>
-                    <div class="row">
+                    <div class="row hotline-info">
 
                         <div class="col-md-4 border-end">
                             <div class="d-flex align-items-center">
                                 <i class="fs-18 cl-mess fas fa-comment-alt-lines"></i>
-                                <span class="fs-14 fw-normal ps-2">Tư vấn</span>
+                                <span class="fs-13 fw-normal ps-2">Tư vấn</span>
                             </div>
                             <div class="icmess1 ps-1 text-center">
                                 <a href="#" class="text-decoration-none fs-14 fw500 all-cursor cl-mess">Zalo</a>
@@ -3025,14 +3055,14 @@
                         <div class="col-md-4 ">
                             <div class="d-flex align-items-center">
                                 <i class="fs-18 cl-mess fab fa-facebook-messenger"></i>
-                                <span class="fs-14 fw-normal ps-2">Tư vấn</span>
+                                <span class="fs-13 fw-normal ps-2">Tư vấn</span>
                             </div>
                             <div class="icmess1 ps-1 text-center">
                                 <a href="#" class="text-decoration-none fs-14 fw500 all-cursor cl-mess">Facebook</a>
                             </div>
                         </div>
                     </div>
-                    <div class="row border rounded mt-4">
+                    <div class="row border rounded mt-4 simnamsinh">
                         <div class="col-md-12 mt-2 border-bottom text-center">
 
                             <div class="title fw500 fs-16 fs cl-prm text-uppercase position-relative pb-1">
@@ -3162,64 +3192,64 @@
 
                             </div>
                         </div>
-                        <div class="col-md-4 border-end border-bottom py-2 text-center">
+                        <div class="col-4 col-md-4 border-end border-bottom py-2 text-center">
                             <a href="ketquatimsim.html" class="text-decoration-none fs-14 fw-normal ps-1  cl151">Năm
                                 1996</a>
                         </div>
-                        <div class="col-md-4 border-end border-bottom py-2 text-center">
+                        <div class="col-4 col-md-4 border-end border-bottom py-2 text-center">
                             <a href="ketquatimsim.html" class="text-decoration-none fs-14 fw-normal cl151">Năm 1996</a>
                         </div>
-                        <div class="col-md-4 border-bottom py-2 text-center">
+                        <div class="col-4 col-md-4 border-bottom py-2 text-center">
                             <a href="ketquatimsim.html" class="text-decoration-none fs-14 fw-normal cl151">Năm 1996</a>
                         </div>
-                        <div class="col-md-4 border-end border-bottom py-2 text-center">
+                        <div class="col-4 col-md-4 border-end border-bottom py-2 text-center">
                             <a href="ketquatimsim.html" class="text-decoration-none fs-14 fw-normal ps-1  cl151">Năm
                                 1996</a>
                         </div>
-                        <div class="col-md-4 border-end border-bottom py-2 text-center">
+                        <div class="col-4 col-md-4 border-end border-bottom py-2 text-center">
                             <a href="ketquatimsim.html" class="text-decoration-none fs-14 fw-normal cl151">Năm 1996</a>
                         </div>
-                        <div class="col-md-4 border-bottom py-2 text-center">
+                        <div class="col-4 col-md-4 border-bottom py-2 text-center">
                             <a href="ketquatimsim.html" class="text-decoration-none fs-14 fw-normal cl151">Năm 1996</a>
                         </div>
-                        <div class="col-md-4 border-end border-bottom py-2 text-center">
+                        <div class="col-4 col-md-4 border-end border-bottom py-2 text-center">
                             <a href="ketquatimsim.html" class="text-decoration-none fs-14 fw-normal ps-1  cl151">Năm
                                 1995</a>
                         </div>
-                        <div class="col-md-4 border-end border-bottom py-2 text-center">
+                        <div class="col-4 col-md-4 border-end border-bottom py-2 text-center">
                             <a href="ketquatimsim.html" class="text-decoration-none fs-14 fw-normal cl151">Năm 1995</a>
                         </div>
-                        <div class="col-md-4 border-bottom py-2 text-center">
+                        <div class="col-4 col-md-4 border-bottom py-2 text-center">
                             <a href="ketquatimsim.html" class="text-decoration-none fs-14 fw-normal cl151">Năm 1995</a>
                         </div>
-                        <div class="col-md-4 border-end border-bottom py-2 text-center">
+                        <div class="col-4 col-md-4 border-end border-bottom py-2 text-center">
                             <a href="ketquatimsim.html" class="text-decoration-none fs-14 fw-normal ps-1  cl151">Năm
                                 1995</a>
                         </div>
-                        <div class="col-md-4 border-end border-bottom py-2 text-center">
+                        <div class="col-4 col-md-4 border-end border-bottom py-2 text-center">
                             <a href="ketquatimsim.html" class="text-decoration-none fs-14 fw-normal cl151">Năm 1995</a>
                         </div>
-                        <div class="col-md-4 border-bottom py-2 text-center">
+                        <div class="col-4 col-md-4 border-bottom py-2 text-center">
                             <a href="ketquatimsim.html" class="text-decoration-none fs-14 fw-normal cl151">Năm 1995</a>
                         </div>
-                        <div class="col-md-4 border-end border-bottom py-2 text-center">
+                        <div class="col-4 col-md-4 border-end border-bottom py-2 text-center">
                             <a href="ketquatimsim.html" class="text-decoration-none fs-14 fw-normal ps-1  cl151">Năm
                                 1994</a>
                         </div>
-                        <div class="col-md-4 border-end border-bottom py-2 text-center">
+                        <div class="col-4 col-md-4 border-end border-bottom py-2 text-center">
                             <a href="ketquatimsim.html" class="text-decoration-none fs-14 fw-normal cl151">Năm 1994</a>
                         </div>
-                        <div class="col-md-4 border-bottom py-2 text-center">
+                        <div class="col-4 col-md-4 border-bottom py-2 text-center">
                             <a href="ketquatimsim.html" class="text-decoration-none fs-14 fw-normal cl151">Năm 1994</a>
                         </div>
-                        <div class="col-md-4 border-end py-2 text-center">
+                        <div class="col-4 col-md-4 border-end py-2 text-center">
                             <a href="ketquatimsim.html" class="text-decoration-none fs-14 fw-normal ps-1  cl151">Năm
                                 1994</a>
                         </div>
-                        <div class="col-md-4 border-end py-2 text-center">
+                        <div class="col-4 col-md-4 border-end py-2 text-center">
                             <a href="ketquatimsim.html" class="text-decoration-none fs-14 fw-normal cl151">Năm 1994</a>
                         </div>
-                        <div class="col-md-4 py-2 text-center">
+                        <div class="col-4 col-md-4 py-2 text-center">
                             <a href="ketquatimsim.html" class="text-decoration-none fs-14 fw-normal cl151">Năm 1994</a>
                         </div>
                     </div>
@@ -3232,32 +3262,32 @@
                                 <span class="separate1"></span>
                             </div>
                         </div>
-                        <div class="col-md-4 border-end border-bottom py-2 text-center">
+                        <div class="col-4 col-md-4 border-end border-bottom py-2 text-center">
                             <a href="ketquatimsim.html"
                                 class="text-decoration-none fs-14 fw-normal cl151">Vietnamobile</a>
                         </div>
-                        <div class="col-md-4 border-end border-bottom py-2 text-center">
+                        <div class="col-4 col-md-4 border-end border-bottom py-2 text-center">
                             <a href="ketquatimsim.html" class="text-decoration-none fs-14 fw-normal cl151">Gmobile</a>
                         </div>
-                        <div class="col-md-4 border-bottom py-2 text-center">
+                        <div class="col-4 col-md-4 border-bottom py-2 text-center">
                             <a href="ketquatimsim.html" class="text-decoration-none fs-14 fw-normal cl151">Mobifone</a>
                         </div>
-                        <div class="col-md-4 border-end border-bottom py-2 text-center">
+                        <div class="col-4 col-md-4 border-end border-bottom py-2 text-center">
                             <a href="ketquatimsim.html" class="text-decoration-none fs-14 fw-normal cl151">Vinaphone</a>
                         </div>
-                        <div class="col-md-4 border-end border-bottom py-2 text-center">
+                        <div class="col-4 col-md-4 border-end border-bottom py-2 text-center">
                             <a href="ketquatimsim.html" class="text-decoration-none fs-14 fw-normal cl151">Viettel</a>
                         </div>
-                        <div class="col-md-4 border-bottom py-2 text-center">
+                        <div class="col-4 col-md-4 border-bottom py-2 text-center">
                             <a href="ketquatimsim.html" class="text-decoration-none fs-14 fw-normal cl151">Vinaphone</a>
                         </div>
-                        <div class="col-md-4 border-end py-2 text-center">
+                        <div class="col-4 col-md-4 border-end py-2 text-center">
                             <a href="ketquatimsim.html" class="text-decoration-none fs-14 fw-normal cl151">iTelecom</a>
                         </div>
-                        <div class="col-md-4 border-end py-2 text-center">
+                        <div class="col-4 col-md-4 border-end py-2 text-center">
                             <a href="ketquatimsim.html" class="text-decoration-none fs-14 fw-normal cl151">Reddi</a>
                         </div>
-                        <div class="col-md-4 py-2 text-center">
+                        <div class="col-4 col-md-4 py-2 text-center">
                             <a href="ketquatimsim.html" class="text-decoration-none fs-14 fw-normal cl151">Tất cả</a>
                         </div>
                     </div>
@@ -3270,83 +3300,83 @@
                                 <span class="separate1"></span>
                             </div>
                         </div>
-                        <div class="col-md-6 text-start border-end border-bottom py-2 text-center">
+                        <div class="col-4 col-md-6 text-start border-end border-bottom py-2 text-center">
                             <a href="ketquatimsim.html" class="text-decoration-none fs-14 fw-normal cl151">Sim giá
                                 rẻ</a>
                         </div>
-                        <div class="col-md-6 text-start border-bottom py-2 text-center">
+                        <div class="col-4 col-md-6 text-start border-bottom py-2 text-center">
                             <a href="ketquatimsim.html" class="text-decoration-none fs-14 fw-normal cl151">Sim đôi</a>
                         </div>
-                        <div class="col-md-6 text-start border-end border-bottom py-2 text-center">
+                        <div class="col-4 col-md-6 text-start border-end border-bottom py-2 text-center">
                             <a href="ketquatimsim.html" class="text-decoration-none fs-14 fw-normal cl151">Sim trả sau
                             </a>
                         </div>
-                        <div class="col-md-6 text-start border-bottom py-2 text-center">
+                        <div class="col-4 col-md-6 text-start border-bottom py-2 text-center">
                             <a href="ketquatimsim.html" class="text-decoration-none fs-14 fw-normal cl151"> Lục quý</a>
                         </div>
-                        <div class="col-md-6 text-start border-end border-bottom py-2 text-center">
+                        <div class="col-4 col-md-6 text-start border-end border-bottom py-2 text-center">
                             <a href="ketquatimsim.html" class="text-decoration-none fs-14 fw-normal cl151">Số độc </a>
                         </div>
-                        <div class="col-md-6 text-start border-bottom py-2 text-center">
+                        <div class="col-4 col-md-6 text-start border-bottom py-2 text-center">
                             <a href="ketquatimsim.html" class="text-decoration-none fs-14 fw-normal cl151"> Ngũ quý </a>
                         </div>
-                        <div class="col-md-6 text-start border-end border-bottom py-2 text-center">
+                        <div class="col-4 col-md-6 text-start border-end border-bottom py-2 text-center">
                             <a href="ketquatimsim.html" class="text-decoration-none fs-14 fw-normal cl151"> Tam hoa kép
                             </a>
                         </div>
-                        <div class="col-md-6 text-start border-bottom py-2 text-center">
+                        <div class="col-4 col-md-6 text-start border-bottom py-2 text-center">
                             <a href="ketquatimsim.html" class="text-decoration-none fs-14 fw-normal cl151"> Sim VIP </a>
                         </div>
-                        <div class="col-md-6 text-start border-end border-bottom py-2 text-center">
+                        <div class="col-4 col-md-6 text-start border-end border-bottom py-2 text-center">
                             <a href="ketquatimsim.html" class="text-decoration-none fs-14 fw-normal cl151">Lộc phát </a>
                         </div>
-                        <div class="col-md-6 text-start border-bottom py-2 text-center">
+                        <div class="col-4 col-md-6 text-start border-bottom py-2 text-center">
                             <a href="ketquatimsim.html" class="text-decoration-none fs-14 fw-normal cl151">Ngũ quý giữa
                             </a>
                         </div>
-                        <div class="col-md-6 text-start border-end border-bottom py-2 text-center">
+                        <div class="col-4 col-md-6 text-start border-end border-bottom py-2 text-center">
                             <a href="ketquatimsim.html" class="text-decoration-none fs-14 fw-normal cl151">Ông địa </a>
                         </div>
-                        <div class="col-md-6 text-start border-bottom py-2 text-center">
+                        <div class="col-4 col-md-6 text-start border-bottom py-2 text-center">
                             <a href="ketquatimsim.html" class="text-decoration-none fs-14 fw-normal cl151">Tiến lên</a>
                         </div>
-                        <div class="col-md-6 text-start border-end border-bottom py-2 text-center">
+                        <div class="col-4 col-md-6 text-start border-end border-bottom py-2 text-center">
                             <a href="ketquatimsim.html" class="text-decoration-none fs-14 fw-normal cl151">Sim tự
                                 chọn</a>
                         </div>
 
-                        <div class="col-md-6 text-start border-bottom py-2 text-center">
+                        <div class="col-4 col-md-6 text-start border-bottom py-2 text-center">
                             <a href="ketquatimsim.html" class="text-decoration-none fs-14 fw-normal cl151">Lặp kép</a>
                         </div>
-                        <div class="col-md-6 text-start border-end border-bottom py-2 text-center">
+                        <div class="col-4 col-md-6 text-start border-end border-bottom py-2 text-center">
                             <a href="ketquatimsim.html" class="text-decoration-none fs-14 fw-normal cl151">Năm sinh</a>
                         </div>
-                        <div class="col-md-6 text-start border-bottom py-2 text-center">
+                        <div class="col-4 col-md-6 text-start border-bottom py-2 text-center">
                             <a href="ketquatimsim.html" class="text-decoration-none fs-14 fw-normal cl151">Dễ nhớ</a>
                         </div>
-                        <div class="col-md-6 text-start  border-bottom border-end py-2 text-center">
+                        <div class="col-4 col-md-6 text-start  border-bottom border-end py-2 text-center">
                             <a href="ketquatimsim.html" class="text-decoration-none fs-14 fw-normal cl151">Lục quý
                                 giữa</a>
                         </div>
-                        <div class="col-md-6 text-start border-bottom py-2 text-center">
+                        <div class="col-4 col-md-6 text-start py-2 text-center pricebottom">
                             <a href="ketquatimsim.html" class="text-decoration-none fs-14 fw-normal cl151">Đầu số cổ</a>
                         </div>
-                        <div class="col-md-6 text-start border-end py-2 text-center">
+                        <div class="col-4 col-md-6 text-start border-end py-2 text-center">
                             <a href="ketquatimsim.html" class="text-decoration-none fs-14 fw-normal cl151">Đại cát</a>
                         </div>
-                        <div class="col-md-6 text-start py-2 text-center">
+                        <div class="col-4 col-md-6 text-start py-2 text-center">
                             <a href="ketquatimsim.html" class="text-decoration-none fs-14 fw-normal cl151">Sim 3G/4G</a>
                         </div>
-                        <div class="col-md-6 text-start border-top border-end py-2 text-center">
+                        <div class="col-4 col-md-6 text-start border-top border-end py-2 text-center">
                             <a href="ketquatimsim.html" class="text-decoration-none fs-14 fw-normal cl151">Thần tài</a>
                         </div>
-                        <div class="col-md-6 text-start border-top py-2 text-center">
+                        <div class="col-4 col-md-6 text-start border-top py-2 text-center">
                             <a href="ketquatimsim.html" class="text-decoration-none fs-14 fw-normal cl151">Trả góp</a>
                         </div>
-                        <div class="col-md-6 text-start border-top border-end py-2 text-center">
+                        <div class="col-4 col-md-6 text-start border-top border-end py-2 text-center">
                             <a href="ketquatimsim.html" class="text-decoration-none fs-14 fw-normal cl151">Sim taxi</a>
                         </div>
-                        <div class="col-md-6 text-start border-top py-2 text-center">
+                        <div class="col-4 col-md-6 text-start border-top py-2 text-center">
                             <a href="ketquatimsim.html" class="text-decoration-none fs-14 fw-normal cl151">Tất cả</a>
                         </div>
                     </div>
@@ -3359,57 +3389,57 @@
                                 <span class="separate1"></span>
                             </div>
                         </div>
-                        <div class="col-md-6 text-start border-end border-bottom py-2 text-center">
+                        <div class="col-4 col-md-6 text-start border-end border-bottom py-2 text-center">
                             <a href="ketquatimsim.html"
-                                class="text-decoration-none fs-14 fw-normal  cl151 text-start">Dưới
+                                class="text-decoration-none fs-13 fw-normal  cl151 text-start">Dưới
                                 500 ngàn</a>
                         </div>
-                        <div class="col-md-6 text-start border-bottom py-2 text-center">
+                        <div class="col-4 col-md-6 text-start border-bottom py-2 text-center">
                             <a href="ketquatimsim.html"
                                 class="text-decoration-none fs-14 fw-normal cl151 text-start">500 - 1
                                 triệu</a>
                         </div>
-                        <div class="col-md-6 text-start border-bottom border-end  py-2 text-center">
+                        <div class="col-4 col-md-6 text-start border-end  py-2 text-center">
                             <a href="ketquatimsim.html" class="text-decoration-none fs-14 fw-normal cl151 text-start">1
                                 - 3
                                 triệu</a>
                         </div>
-                        <div class="col-md-6 text-start border-bottom py-2 text-center">
+                        <div class="col-4 col-md-6 text-start border-bottom py-2 text-center">
                             <a href="ketquatimsim.html" class="text-decoration-none fs-14 fw-normal  cl151 text-start">3
                                 - 5
                                 triệu</a>
                         </div>
-                        <div class="col-md-6 text-start border-end border-bottom py-2 text-center">
+                        <div class="col-4 col-md-6 text-start border-end border-bottom pricetop py-2 text-center">
                             <a href="ketquatimsim.html" class="text-decoration-none fs-14 fw-normal  cl151 text-start">5
                                 - 10
                                 triệu</a>
                         </div>
-                        <div class="col-md-6 text-start border-bottom py-2 text-center">
+                        <div class="col-4 col-md-6 text-start py-2 text-center price1050">
                             <a href="ketquatimsim.html" class="text-decoration-none fs-14 fw-normal cl151 text-start">10
                                 - 50
                                 triệu</a>
                         </div>
-                        <div class="col-md-6 text-start border-bottom border-end  py-2 text-center">
+                        <div class="col-4 col-md-6 text-start border-end  py-2 text-center">
                             <a href="ketquatimsim.html" class="text-decoration-none fs-14 fw-normal cl151 text-start">50
                                 -
                                 100 triệu</a>
                         </div>
-                        <div class="col-md-6 text-start py-2 text-center">
+                        <div class="col-4 col-md-6 text-start py-2 text-center pricetop">
                             <a href="ketquatimsim.html"
-                                class="text-decoration-none fs-14 fw-normal  cl151 text-start">100 -
+                                class="text-decoration-none fs-14 fw-normal cl151 text-start">100 -
                                 200 triệu</a>
                         </div>
-                        <div class="col-md-6 text-start border-end py-2 text-center">
+                        <div class="col-4 col-md-6 text-start border-end pricetop py-2 text-center price500">
                             <a href="ketquatimsim.html"
                                 class="text-decoration-none fs-14 fw-normal cl151 text-start">200 -
                                 500 triệu</a>
                         </div>
-                        <div class="col-md-6 border-top py-2 text-center">
+                        <div class="col-4 col-md-6 border-top py-2 text-center">
                             <a href="ketquatimsim.html"
                                 class="text-decoration-none fs-14 fw-normal cl151 text-start">Trên
                                 500 triệu</a>
                         </div>
-                        <div class="col-md-12 border-top py-2 text-center">
+                        <div class="col-8 col-md-12 border-top py-2 text-center">
                             <a href="ketquatimsim.html" class="text-decoration-none fs-14 fw-normal cl151">Tùy chọn
                                 khoảng
                                 giá</a>
@@ -3448,7 +3478,7 @@
                                 </div>
                             </div>
                             <div class="dt border-top mt-3 pt-2">
-                                <a href="tintuc.html" class="text-decoration-none fs-14 fw500 cl7E8">Đọc thêm</a>
+                                <a href="tintuc.html" class="text-decoration-none fs-13 fw500 cl7E8">Đọc thêm</a>
                             </div>
                             <div class="newadd">
                                 <ul class="newlist fs-14 fw500 cl333 ps-3">
@@ -3499,13 +3529,11 @@
                             </div>
                         </div>
                     </div>
-                    <div class="row">
+                    <div class="row xemthem-right">
                         <div class="col-md-12">
                             <div class="btnTim d-flex justify-content-center">
-                                <button type="button"
-                                    class="btn btn-primary btn-ts btnxemthem cl288 cl288 fs400 fs-14 fst-normal">
-                                    <a href="tintuc.html" class="text-decoration-none">Xem tất cả<i
-                                            class="fas fa-caret-down"></i></a>
+                                <button type="button" class="btn btn-primary btn-ts btnxemthem cl288 cl288 fs400 fs-14 fst-normal">
+                                    <a href="tintuc.html" class="text-decoration-none">Xem tất cả <i class="fas fa-caret-down"></i></a>
                                 </button>
                             </div>
                         </div>
@@ -3514,70 +3542,57 @@
             </div>
         </div>
     </main>
-
     <footer>
-        <div class="footer-top mt-4">
+        <div class="footer-top mt-2">
             <div class="container border py-4 ps-4 mb-4 rounded">
-                <div class="row">
-                    <div class="col-md-2">
-                        <div class="ftitem d-flex align-items-center">
-                            <div class="ftitem-icon position-relative">
-                                <i
-                                    class="fs-24 cl-mess far fa-sim-card position-absolute start-50 translate-middle-x"></i>
-                            </div>
-                            <div class="ps-1">
-                                <span>&nbsp;&nbsp;Đặt mua sim</span>
-                            </div>
+                <div class="footer-wrap d-flex justify-content-between align-items-center">
+                    <div class="ftitem d-flex align-items-center ">
+                        <div class="ftitem-icon position-relative">
+                            <i class="fs-24 cl-mess far fa-sim-card position-absolute start-50 translate-middle-x"></i>
+                        </div>
+                        <div class="ps-1">
+                                        <span>Đặt mua sim</span>
                         </div>
                     </div>
-                    <div class="col-md-4">
-                        <div class="ftitem d-flex align-items-center">
-                            <div class="ftitem-icon position-relative">
-                                <i
-                                    class="fs-24 cl-mess far fa-sim-card position-absolute start-50 translate-middle-x"></i>
-                            </div>
-                            <div class="ps-1">
-                                <span class="pe-3">&nbsp;&nbsp;Thanh toán tiền mặt, chuyển khoản,<br /> trả góp</span>
-                            </div>
+                    <div class="ftitem d-flex align-items-center">
+                        <div class="ftitem-icon position-relative">
+                            <i class="cl-mess fs-24 fal fa-credit-card-front position-absolute start-50 translate-middle-x"></i>
+                        </div>
+                        <div class="ps-1">
+                            <span class="">Thanh toán tiền mặt, chuyển khoản</span>
                         </div>
                     </div>
-                    <div class="col-md-3">
-                        <div class="ftitem d-flex align-items-center">
-                            <div class="ftitem-icon position-relative">
-                                <i
-                                    class="fs-24 cl-mess far fa-sim-card position-absolute start-50 translate-middle-x"></i>
-                            </div>
-                            <div class="ps-1">
-                                <span>&nbsp;&nbsp;Giao sim nhanh trong ngày</span>
-                            </div>
+                    <div class="ftitem d-flex align-items-center">
+                        <div class="ftitem-icon position-relative ">
+                            <i class="cl-mess fs-24 fal fa-piggy-bank position-absolute start-50 translate-middle-x"></i>
+                        </div>
+                        <div class="ps-1">
+                            <span>Giao sim nhanh trong ngày</span>
                         </div>
                     </div>
-                    <div class="col-md-3">
-                        <div class="ftitem d-flex align-items-center">
-                            <div class="ftitem-icon position-relative">
-                                <i
-                                    class="fs-24 cl-mess far fa-sim-card position-absolute start-50 translate-middle-x"></i>
-                            </div>
-                            <div class="ps-1">
-                                <span>&nbsp;&nbsp;Kiểm tra xong thanh toán</span>
-                            </div>
+                    <div class="ftitem d-flex align-items-center">
+                        <div class="ftitem-icon position-relative ">
+                            <i class="cl-mess fs-24 far fa-check-circle position-absolute start-50 translate-middle-x"></i>
+                        </div>
+                        <div class="ps-1">
+                            <span>Kiểm tra xong thanh toán</span>
                         </div>
                     </div>
-
                 </div>
             </div>
-            <div class="footer-nav bg-menu">
-                <p class="fs-14 fw400 clfff my-0 py-2 text-center">
-                    <span>©</span>
-                    <a href="trangchu.html" class="text-decoration-none clfff fs-14 fw700"><strong>Kho Sim</strong></a>
-                    <span>- Công ty TNHH TMDV Viễn thông Kho Sim. GPDKKD: 0314882320 do sở KH & ĐT TP.HCM cấp ngày
-                        07/02/2018</span>
-                </p>
-            </div>
+        </div>
+        <div class="footer-nav bg-menu">
+            <p class="fs-14 fw400 clfff my-0 py-2 text-center">
+                <span>©</span>
+                <a href="trangchu.html" class="text-decoration-none clfff fs-14 fw700"><strong>Kho Sim</strong></a>
+                <span>- Công ty TNHH TMDV Viễn thông Kho Sim. GPDKKD: 0314882320 do sở KH & ĐT TP.HCM cấp ngày
+                    07/02/2018</span>
+            </p>
+        </div>
         </div>
     </footer>
-    <script type="text/javascript" src="./lib/js/jquery.matchHeight.js"></script>
-    <script type="text/javascript" src="./lib/js/script.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script type="text/javascript" src="./lib/js/mobile.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.6.0/dist/umd/popper.min.js" integrity="sha384-KsvD1yqQ1/1+IA7gi3P0tyJcT3vR+NdBTt13hSJ2lnve8agRGXTTyNaBYmCR/Nwi" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.min.js" integrity="sha384-nsg8ua9HAw1y0W1btsyWgBklPnCUAFLuTMS2G72MMONqmOymq585AcH49TLBQObG" crossorigin="anonymous"></script>    
 </body>
